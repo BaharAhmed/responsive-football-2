@@ -29,9 +29,9 @@ nav ul li a{
 }
 .button{
    
-    justify-items: flex-start;
-        margin-top: 20px;
-        padding-left: 300px;
+    justify-items: flex-end;
+    margin-top: 20px;
+    
 
 }
 .nav-button{
@@ -211,4 +211,66 @@ main{
 }
 .footer-end{
     padding-left: 125px;
+}
+/*---------------------
+     Media Queries
+------------------------- */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+ 
+.header-container{
+        display: none;
+    }
+.banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+}
+.left-width{
+        width: 100%;
+
+}
+.left-width h1{
+        width: 60%;
+        padding-right: 50px;
+        
+}
+
+.right-width img {
+        width: 100%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.second-banner{
+    display: flex;
+    flex-direction: column;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.blog{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.footer-img{
+    width: 100%;
+}
+}
+/*------------tablate devices----------*/
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .header-container{
+        display: none;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       grid-column-gap:0px;
+    }    
 }
